@@ -1,185 +1,393 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV — Mickaël Essa</title>
-<style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Segoe UI', Arial, sans-serif; background: #fff; color: #1a1a1a; }
-  .cv { max-width: 820px; margin: 0 auto; padding: 2.5rem 2.5rem 3rem; }
-  .header { text-align: center; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1.5px solid #333; }
-  .header h1 { font-size: 28px; font-weight: 600; letter-spacing: 0.08em; margin-bottom: 0.4rem; }
-  .header .job-title { font-size: 13px; font-weight: 500; letter-spacing: 0.18em; color: #555; text-transform: uppercase; margin-bottom: 0.6rem; }
-  .header .contact { font-size: 13px; color: #555; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-  section { margin-bottom: 1.6rem; }
-  .section-title { font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #555; border-bottom: 0.5px solid #ccc; padding-bottom: 5px; margin-bottom: 1rem; }
-  .entry { display: grid; grid-template-columns: 1fr auto; gap: 0 12px; margin-bottom: 1.2rem; }
-  .entry:last-child { margin-bottom: 0; }
-  .entry-title { font-size: 14px; font-weight: 600; color: #1a1a1a; }
-  .entry-sub { font-size: 13px; color: #555; font-style: italic; margin-top: 1px; }
-  .entry-date { font-size: 12px; color: #555; white-space: nowrap; padding-top: 1px; }
-  .entry-body { grid-column: 1 / -1; margin-top: 6px; }
-  .entry-body ul { padding-left: 1.1rem; }
-  .entry-body li { font-size: 13px; line-height: 1.65; color: #1a1a1a; margin-bottom: 3px; }
-  .edu-entry { display: grid; grid-template-columns: 1fr auto; margin-bottom: 1rem; }
-  .edu-entry:last-child { margin-bottom: 0; }
-  .edu-title { font-size: 14px; font-weight: 600; }
-  .edu-degree { font-size: 13px; font-style: italic; color: #555; margin-top: 1px; }
-  .edu-courses { font-size: 12px; color: #555; margin-top: 4px; line-height: 1.5; }
-  .edu-courses span { font-weight: 600; color: #1a1a1a; }
-  .skills-grid { display: grid; gap: 6px; }
-  .skill-row { display: flex; gap: 6px; align-items: baseline; font-size: 13px; line-height: 1.5; }
-  .skill-label { font-weight: 600; white-space: nowrap; min-width: 130px; }
-  .projects-entry { margin-bottom: 1rem; }
-  .projects-entry:last-child { margin-bottom: 0; }
-  .proj-header { display: flex; justify-content: space-between; align-items: baseline; }
-  .proj-title { font-size: 14px; font-weight: 600; }
-  .proj-sub { font-size: 12px; color: #555; font-style: italic; margin-top: 2px; }
-  .proj-list { padding-left: 1.1rem; margin-top: 5px; }
-  .proj-list li { font-size: 13px; line-height: 1.65; margin-bottom: 3px; }
-  .interests { font-size: 13px; line-height: 1.7; color: #1a1a1a; }
-  .interests strong { font-weight: 600; }
-  @media print {
-    body { -webkit-print-color-adjust: exact; }
-    .cv { padding: 1.5rem; }
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mickaël Essa — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="cv">
 
-  <div class="header">
-    <h1>MICKAËL ESSA</h1>
-    <div class="job-title">Content Manager</div>
-    <div class="contact">
-      <span>Île-de-France, France</span>
-      <span>+33 7 82 07 74 63</span>
-      <span>mickael.essa@hotmail.com</span>
+  <!-- ═══════════════ NAV ═══════════════ -->
+  <nav>
+    <div class="nav-logo">M<span>.</span>Essa</div>
+    <ul class="nav-links">
+      <li><a href="#about">Profil</a></li>
+      <li><a href="#experience">Expériences</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#education">Formation</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <header class="hero">
+    <span class="hero-tag">Disponible immédiatement · Île-de-France</span>
+    <h1>
+      Mickaël
+      <span class="highlight">Essa</span>
+    </h1>
+    <p class="hero-sub">
+      Master 2 Marketing Digital, Data &amp; E-commerce · Passionné par la data, la stratégie digitale
+      et la relation client B2B. À la recherche de mon prochain défi professionnel.
+    </p>
+    <div class="hero-cta">
+      <a href="#experience" class="btn-primary">Voir mon parcours</a>
+      <a href="mailto:mickael.essa@hotmail.com" class="btn-outline">Me contacter</a>
     </div>
-  </div>
-
-  <section>
-    <div class="section-title">Expériences professionnelles</div>
-
-    <div class="entry">
-      <div class="entry-title">Conseiller Commercial Vente Marketing — Alternance</div>
-      <div class="entry-date">Sept. 2023 – Août 2025</div>
-      <div class="entry-sub">Groupe Neubauer BMW &amp; MINI</div>
-      <div></div>
-      <div class="entry-body">
-        <ul>
-          <li>Gestion complète du cycle de vente, de la découverte des besoins à la négociation et closing</li>
-          <li>Finalisation de la livraison de <strong>plus de 430 véhicules (VN/VO)</strong>, garantissant l'expérience client et favorisant le cross-selling des produits périphériques</li>
-          <li>Analyse mensuelle des KPI de vente et mise en place d'actions correctives pour atteindre les objectifs de volume et de marge</li>
-          <li>Réalisation de shootings photo, post-production et mise en ligne des contenus pour valoriser 8 véhicules et dynamiser la présence digitale</li>
-          <li>Suivi opérationnel de <strong>plus de 25 véhicules</strong> au catalogue et coordination logistique pour assurer la disponibilité optimale</li>
-          <li>Optimisation des outils digitaux (application et dalle numérique) en showroom pour fluidifier le parcours d'achat</li>
-        </ul>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <strong>+5 000</strong>
+        <span>Dossiers B2B pilotés</span>
+      </div>
+      <div class="stat-item">
+        <strong>430+</strong>
+        <span>Véhicules livrés</span>
+      </div>
+      <div class="stat-item">
+        <strong>4</strong>
+        <span>Langues</span>
+      </div>
+      <div class="stat-item">
+        <strong>2</strong>
+        <span>Masters &amp; Diplômes</span>
       </div>
     </div>
+  </header>
 
-    <div class="entry">
-      <div class="entry-title">Administration des ventes — Alternance</div>
-      <div class="entry-date">Sept. 2021 – Juil. 2023</div>
-      <div class="entry-sub">Groupe ALSO – LAFI</div>
-      <div></div>
-      <div class="entry-body">
-        <ul>
-          <li>Pilotage opérationnel de <strong>+5 000 dossiers</strong> de commandes B2B au sein d'un acteur majeur de la distribution IT (matériel, logiciels et solutions cloud)</li>
-          <li>Suivi de la facturation client et coordination des flux entre les équipes internes et les partenaires constructeurs (HP, Lenovo) pour l'optimisation des stocks</li>
-          <li>Gestion et traçabilité documentaire des bons de livraison sur des volumes financiers significatifs</li>
-        </ul>
-      </div>
-    </div>
+  <div class="divider"></div>
 
-    <div class="entry">
-      <div class="entry-title">Assistant ingénieur — Stage</div>
-      <div class="entry-date">Depuis déc. 2016</div>
-      <div class="entry-sub">Supméca – Institut Supérieur de Mécanique de Paris</div>
-      <div></div>
-      <div class="entry-body">
-        <ul>
-          <li>Apprentissage et mise en application des logiciels CATIA et ADAMS VIEW</li>
-          <li>Étude de l'énergie cinétique sur le WOBBLE Skateboard</li>
-          <li>Programmation d'une cartographie sur le robot NAO</li>
-        </ul>
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section id="about">
+    <div class="container">
+      <p class="section-label">À propos</p>
+      <h2 class="section-title">Profil</h2>
+      <div class="about-grid fade-in">
+        <div class="about-text">
+          <p>
+            Diplômé d'un <strong>Master 2 Marketing Digital, Data &amp; E-commerce</strong> à l'ISTEC
+            Business School, je combine une solide culture digitale avec une expérience terrain en
+            environnement B2B et commercial.
+          </p>
+          <p>
+            Mon parcours m'a permis de maîtriser aussi bien la <strong>gestion opérationnelle de
+            volumes importants</strong> (commandes, stocks, livraisons) que la création de contenu
+            digital, l'optimisation de parcours client et le pilotage d'indicateurs de performance.
+          </p>
+          <p>
+            Créatif, rigoureux et proactif, je m'adapte rapidement à de nouveaux environnements et
+            aime allier analyse de données et sens du résultat.
+          </p>
+        </div>
+        <div>
+          <div class="contact-chips">
+            <div class="chip">
+              <div class="chip-icon">📍</div>
+              Île-de-France, France
+            </div>
+            <div class="chip">
+              <div class="chip-icon">✉️</div>
+              mickael.essa@hotmail.com
+            </div>
+            <div class="chip">
+              <div class="chip-icon">📱</div>
+              +33 7 82 07 74 63
+            </div>
+            <div class="chip">
+              <div class="chip-icon">🎓</div>
+              Disponible immédiatement
+            </div>
+            <div class="chip">
+              <div class="chip-icon">🌐</div>
+              Français · Anglais · Arabe · Espagnol
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="section-title">Éducation</div>
+  <div class="divider"></div>
 
-    <div class="edu-entry">
-      <div>
-        <div class="edu-title">ISTEC Business School</div>
-        <div class="edu-degree">Diplôme PGE — Master 2 Marketing Digital, Data &amp; E-commerce</div>
-        <div class="edu-courses"><span>Cours :</span> Web développement, UX et UI, Référencement SEO/SEA/SMO/SMA, Réseaux sociaux et influenceurs</div>
-      </div>
-      <div class="entry-date">Sept. 2023 – Août 2025</div>
-    </div>
+  <!-- ═══════════════ EXPERIENCE ═══════════════ -->
+  <section id="experience">
+    <div class="container">
+      <p class="section-label">Parcours</p>
+      <h2 class="section-title">Expériences professionnelles</h2>
 
-    <div class="edu-entry">
-      <div>
-        <div class="edu-title">ISTEC Business School</div>
-        <div class="edu-degree">Diplôme en Management — Bachelor Marketing et Communication Digitale</div>
-        <div class="edu-courses"><span>Cours :</span> Cryptomonnaies et innovation, Outils de création de sites, Gestion des réseaux sociaux, E-marketing appliqué</div>
+      <div class="timeline">
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-title">Conseiller Commercial Vente Marketing — Alternance</span>
+              <span class="timeline-date">Sept. 2023 – Août 2025</span>
+            </div>
+            <p class="timeline-company">Groupe Neubauer BMW &amp; MINI</p>
+            <ul class="timeline-bullets">
+              <li>Gestion complète du cycle de vente : découverte des besoins, négociation et closing</li>
+              <li>Finalisation de la livraison de <strong>plus de 430 véhicules (VN/VO)</strong>, garantissant l'expérience client et le cross-selling</li>
+              <li>Analyse mensuelle des <strong>KPI de vente</strong> et mise en place d'actions correctives pour atteindre les objectifs de volume et de marge</li>
+              <li>Réalisation de shootings photo, post-production et mise en ligne pour valoriser 8 véhicules en ligne</li>
+              <li>Suivi opérationnel de <strong>plus de 25 véhicules</strong> au catalogue et coordination logistique</li>
+              <li>Optimisation des outils digitaux (application &amp; dalle numérique) en showroom pour fluidifier le parcours d'achat</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-title">Administration des Ventes — Alternance</span>
+              <span class="timeline-date">Sept. 2021 – Juil. 2023</span>
+            </div>
+            <p class="timeline-company">Groupe ALSO – LAFI</p>
+            <ul class="timeline-bullets">
+              <li>Pilotage opérationnel de <strong>+5 000 dossiers</strong> de commandes B2B au sein d'un acteur majeur de la distribution IT</li>
+              <li>Suivi de la facturation client et coordination des flux entre équipes internes et partenaires constructeurs (HP, Lenovo)</li>
+              <li>Gestion et traçabilité documentaire des bons de livraison sur des volumes financiers significatifs</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-title">Assistant Ingénieur — Stage</span>
+              <span class="timeline-date">Depuis Décembre 2016</span>
+            </div>
+            <p class="timeline-company">Supméca – Institut Supérieur de Mécanique de Paris</p>
+            <ul class="timeline-bullets">
+              <li>Apprentissage et mise en application des logiciels CATIA et ADAMS VIEW</li>
+              <li>Étude de l'énergie cinétique sur le WOBBLE Skateboard</li>
+              <li>Programmation d'une cartographie sur le robot NAO</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
-      <div class="entry-date">Sept. 2021 – Août 2023</div>
     </div>
   </section>
 
-  <section>
-    <div class="section-title">Compétences et langues</div>
-    <div class="skills-grid">
-      <div class="skill-row"><span class="skill-label">Langues</span><span>Français (langue maternelle) · Anglais (intermédiaire) · Arabe (C2) · Espagnol (A1)</span></div>
-      <div class="skill-row"><span class="skill-label">Outils &amp; logiciels</span><span>Excel · PowerPoint · Salesforce · Canva · Photoshop · Illustrator · Figma · PrestaShop · WordPress · SolidWorks</span></div>
-      <div class="skill-row"><span class="skill-label">Certifications</span><span>PrestaShop · ContentSquare · Fundamentals of Digital Marketing · Marketing des réseaux sociaux</span></div>
-      <div class="skill-row"><span class="skill-label">Soft skills</span><span>Créativité · Proactivité · Rigueur · Sens du détail · Esprit d'équipe · Adaptabilité</span></div>
-    </div>
-  </section>
+  <div class="divider"></div>
 
-  <section>
-    <div class="section-title">Projets</div>
+  <!-- ═══════════════ SKILLS ═══════════════ -->
+  <section id="skills">
+    <div class="container">
+      <p class="section-label">Savoir-faire</p>
+      <h2 class="section-title">Compétences &amp; Outils</h2>
 
-    <div class="projects-entry">
-      <div class="proj-header">
-        <div class="proj-title">Fil Rouge — PrestaShop &amp; ContentSquare</div>
-        <div class="entry-date">Sept. 2024 – Juil. 2025</div>
+      <div class="skills-wrapper fade-in">
+
+        <div class="skill-card">
+          <div class="skill-card-icon">📊</div>
+          <h3>Data &amp; Analyse</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Excel</span>
+            <span class="skill-tag">KPI</span>
+            <span class="skill-tag">Salesforce</span>
+            <span class="skill-tag">ContentSquare</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🎨</div>
+          <h3>Design &amp; Création</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Canva</span>
+            <span class="skill-tag">Photoshop</span>
+            <span class="skill-tag">Illustrator</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🌐</div>
+          <h3>Digital &amp; Web</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">PrestaShop</span>
+            <span class="skill-tag">SEO/SEA</span>
+            <span class="skill-tag">SMO/SMA</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🤝</div>
+          <h3>Commercial &amp; B2B</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Cycle de vente</span>
+            <span class="skill-tag">Négociation</span>
+            <span class="skill-tag">CRM</span>
+            <span class="skill-tag">ADV</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">💡</div>
+          <h3>Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Créativité</span>
+            <span class="skill-tag">Rigueur</span>
+            <span class="skill-tag">Proactivité</span>
+            <span class="skill-tag">Esprit d'équipe</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card-icon">🏅</div>
+          <h3>Certifications</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PrestaShop</span>
+            <span class="skill-tag">ContentSquare</span>
+            <span class="skill-tag">Google Digital</span>
+            <span class="skill-tag">Social Media</span>
+          </div>
+        </div>
+
       </div>
-      <div class="proj-sub">Conception d'une application et optimisation du parcours client sur Figma</div>
-      <ul class="proj-list">
-        <li>Développement complet du site web depuis la homepage</li>
-        <li>Pilotage et gestion de la mise en ligne du site e-commerce</li>
-        <li>Mise en place et suivi des actions de promotion digitale</li>
-      </ul>
-    </div>
 
-    <div class="projects-entry">
-      <div class="proj-header">
-        <div class="proj-title">L'Expérience Entrepreneuriale &amp; Créative — Projet Bachelor</div>
-        <div class="entry-date">Sept. 2021 – Juil. 2023</div>
+      <!-- Languages -->
+      <h3 style="margin-top:3rem; font-size:.75rem; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); margin-bottom:1rem;">Langues</h3>
+      <div class="lang-grid fade-in">
+        <div class="lang-item">
+          <div class="lang-flag">🇫🇷</div>
+          <div class="lang-name">Français</div>
+          <div class="lang-level">Langue maternelle</div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-flag">🇬🇧</div>
+          <div class="lang-name">Anglais</div>
+          <div class="lang-level">Intermédiaire</div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-flag">🇸🇦</div>
+          <div class="lang-name">Arabe</div>
+          <div class="lang-level">C2</div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-flag">🇪🇸</div>
+          <div class="lang-name">Espagnol</div>
+          <div class="lang-level">A1</div>
+        </div>
       </div>
-      <ul class="proj-list">
-        <li>Immersion 360° : de la reproduction de scènes cultes à la création complète d'une startup sur un an (stratégie, finance, RH)</li>
-        <li>Développement de la créativité, de l'art du pitch et de la gestion de projet en équipe</li>
-        <li>Double défi validé par des jurys de professionnels du cinéma et des investisseurs potentiels</li>
-      </ul>
+
     </div>
   </section>
 
+  <div class="divider"></div>
+
+  <!-- ═══════════════ EDUCATION ═══════════════ -->
+  <section id="education">
+    <div class="container">
+      <p class="section-label">Formation</p>
+      <h2 class="section-title">Parcours académique</h2>
+
+      <div class="edu-grid fade-in">
+        <div class="edu-card">
+          <p class="edu-school">ISTEC Business School</p>
+          <p class="edu-degree">Master 2 — Marketing Digital, Data &amp; E-commerce</p>
+          <p class="edu-date">Septembre 2023 – Août 2025</p>
+          <p class="edu-courses">
+            Web développement · UX &amp; UI · Référencement SEO / SEA / SMO / SMA · Réseaux sociaux &amp; influenceurs
+          </p>
+        </div>
+        <div class="edu-card">
+          <p class="edu-school">ISTEC Business School</p>
+          <p class="edu-degree">Bachelor — Marketing &amp; Communication Digitale</p>
+          <p class="edu-date">Septembre 2021 – Août 2023</p>
+          <p class="edu-courses">
+            Cryptomonnaies &amp; innovation · Outils de création de sites · Gestion des réseaux sociaux · E-marketing appliqué
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════ PROJECTS ═══════════════ -->
+  <section id="projects">
+    <div class="container">
+      <p class="section-label">Réalisations</p>
+      <h2 class="section-title">Projets</h2>
+
+      <div class="projects-grid fade-in">
+        <div class="project-card">
+          <h3>Fil Rouge — PrestaShop · ContentSquare</h3>
+          <p class="project-sub">Conception d'une application &amp; optimisation du parcours client sur Figma</p>
+          <ul>
+            <li>Développement complet du site e-commerce depuis la homepage</li>
+            <li>Pilotage et gestion de la mise en ligne du site</li>
+            <li>Mise en place et suivi des actions de promotion digitale</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>L'Expérience Entrepreneuriale &amp; Créative</h3>
+          <p class="project-sub">Projet en Bachelor</p>
+          <ul>
+            <li>Immersion 360° : reproduction de scènes cultes + création complète d'une startup sur un an (stratégie, finance, RH)</li>
+            <li>Développement de la créativité, de l'art du pitch et de la gestion de projet en équipe</li>
+            <li>Validation par un jury de professionnels du cinéma et d'investisseurs potentiels</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════ INTERESTS ═══════════════ -->
   <section>
-    <div class="section-title">Centres d'intérêt</div>
-    <div class="interests">
-      <strong>Badminton</strong> — Pratique en association sportive pendant 4 ans, jeu régulier ·
-      <strong>Automobile</strong> — Intérêt pour le design et l'ingénierie ; sports mécaniques ·
-      <strong>Dessin</strong> — Précision des œuvres et du design ·
-      <strong>Voyage</strong> — États-Unis, Égypte, Espagne, Grèce, Italie ·
-      <strong>Bénévole</strong> — Coptic maraude, distribution de repas aux personnes sans domicile fixe
+    <div class="container">
+      <p class="section-label">En dehors du travail</p>
+      <h2 class="section-title">Centres d'intérêt</h2>
+      <div class="interests-flex fade-in">
+        <div class="interest-pill">🏸 Badminton</div>
+        <div class="interest-pill">🚗 Automobile &amp; Design</div>
+        <div class="interest-pill">✏️ Dessin</div>
+        <div class="interest-pill">✈️ Voyages</div>
+        <div class="interest-pill">🤲 Bénévolat Coptic Maraude</div>
+      </div>
     </div>
   </section>
 
-</div>
+  <div class="divider"></div>
+
+  <!-- ═══════════════ CONTACT ═══════════════ -->
+  <section id="contact">
+    <div class="container" style="text-align:center; padding-top:4rem; padding-bottom:4rem;">
+      <p class="section-label">Disponible immédiatement</p>
+      <h2 class="section-title" style="margin-bottom:1rem;">Travaillons ensemble</h2>
+      <p style="color:var(--text-muted); max-width:480px; margin:0 auto 2.5rem;">
+        Je suis activement à la recherche d'opportunités en Île-de-France et ouvert à toute discussion.
+        N'hésitez pas à me contacter.
+      </p>
+      <a href="mailto:mickael.essa@hotmail.com" class="btn-primary">✉ mickael.essa@hotmail.com</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer>
+    <p>© 2025 Mickaël Essa · <a href="mailto:mickael.essa@hotmail.com">mickael.essa@hotmail.com</a> · +33 7 82 07 74 63</p>
+  </footer>
+
+  <!-- ═══════════════ SCRIPT ═══════════════ -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
 </body>
 </html>
