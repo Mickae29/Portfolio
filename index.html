@@ -1,325 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mickaël Essa — Content Manager & Brand Storytelling</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mickaël Essa - Portfolio CV</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-dot" id="cursorDot"></div>
-
-  <div class="noise"></div>
-
-  <section class="hero">
-    <nav class="nav">
-      <span class="nav-logo">M.ESSA</span>
-      <div class="nav-links">
-        <a href="#about">Profil</a>
-        <a href="#experience">Parcours</a>
-        <a href="#skills">Expertises</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-
-    <div class="hero-content">
-      <div class="hero-text">
-        <p class="hero-tag fade-in" style="animation-delay:.1s">Disponible immédiatement · Paris, Île-de-France</p>
-        <h1 class="hero-name fade-in" style="animation-delay:.25s">
-          <span class="name-first">Mickaël</span><br/>
-          <span class="name-last">Essa</span>
-        </h1>
-        <p class="hero-title fade-in" style="animation-delay:.45s">Content Manager<br/><em>Brand &amp; Storytelling</em></p>
-        <a href="#experience" class="hero-cta fade-in" style="animation-delay:.65s">
-          <span>Découvrir mon parcours</span>
-          <svg width="20" height="20" viewBox="0 0 20 20"><path d="M10 3v14M3 10l7 7 7-7" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-      </div>
-
-      <div class="hero-photo fade-in" style="animation-delay:.5s">
-        <div class="photo-frame">
-          <div class="photo-accent-line top"></div>
-          <div class="photo-accent-line right"></div>
-          <img src="photo me.jpg" alt="Mickaël Essa" class="photo-img" />
-          <div class="photo-overlay"></div>
-        </div>
-        <div class="photo-label">
-          <span>M.E</span>
-          <span class="dot">·</span>
-          <span>©2025</span>
-        </div>
+  <header class="hero">
+    <div class="container hero-content">
+      <img src="photo me.png" alt="Photo de Mickaël Essa" class="profile-photo">
+      <div>
+        <h1>Mickaël Essa</h1>
+        <h2>Content Manager – Brand & Storytelling</h2>
+        <p>Paris · Île-de-France · Disponible immédiatement</p>
+        <p>📧 mickael.essa@hotmail.com | 📞 +33 7 82 07 74 63</p>
       </div>
     </div>
+  </header>
 
-    <div class="hero-scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+  <main class="container">
+    <section class="card">
+      <h3>Profil</h3>
+      <p>4 ans d’expérience en production de contenus digitaux multi-formats : copywriting, vidéo, web, SEO et stratégie de contenu. Utilisation avancée des outils IA pour accélérer la production et renforcer l’impact des marques.</p>
+    </section>
 
-  <section class="about section" id="about">
-    <div class="section-label">01 — Profil</div>
-    <div class="about-grid">
-      <div class="about-headline reveal">
-        <h2>Stratège de contenu<br/><em>à l'instinct éditorial</em><br/>acéré.</h2>
+    <section class="card">
+      <h3>Expériences Professionnelles</h3>
+      <div class="job">
+        <h4>Product and Web Content Specialist – Groupe Neubauer BMW & MINI</h4>
+        <span>2023 – 2025</span>
+        <ul>
+          <li>Production de 50+ contenus photo par trimestre.</li>
+          <li>Gestion opérationnelle de plus de 25 véhicules au catalogue.</li>
+          <li>Mise en place de workflows IA divisant par deux le temps de production.</li>
+          <li>Accompagnement digital sur plus de 450 véhicules livrés.</li>
+        </ul>
       </div>
-      <div class="about-body reveal">
-        <p>Fort de <strong>4 ans d'expérience</strong> en production de contenus digitaux multi-formats — copywriting, vidéo et web. À l'aise sur toute la chaîne éditoriale : stratégie de contenu, rédaction SEO, script vidéo, distribution social.</p>
-        <p>J'utilise les outils IA (ChatGPT, Claude, Copilot) comme <strong>levier de productivité quotidien</strong>, pas comme gadget. Je cherche à mettre une vraie voix de marque au service d'une mission qui compte.</p>
-        <div class="about-langs">
-          <div class="lang-item"><span class="lang-name">Français</span><span class="lang-level">Natif</span></div>
-          <div class="lang-item"><span class="lang-name">Arabe</span><span class="lang-level">C2</span></div>
-          <div class="lang-item"><span class="lang-name">Anglais</span><span class="lang-level">B2 Business</span></div>
-          <div class="lang-item"><span class="lang-name">Espagnol</span><span class="lang-level">A1</span></div>
-        </div>
+
+      <div class="job">
+        <h4>Chargé d'Administration des Ventes & Coordination B2B – Groupe ALSO / LAFI</h4>
+        <span>2021 – 2023</span>
+        <ul>
+          <li>Pilotage de plus de 5 000 dossiers de commandes B2B.</li>
+          <li>Coordination avec HP et Lenovo pour l’optimisation des stocks.</li>
+        </ul>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="stats">
-    <div class="stat-item reveal">
-      <span class="stat-num">50<sup>+</sup></span>
-      <span class="stat-label">Contenus média<br/>par trimestre</span>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat-item reveal">
-      <span class="stat-num">5k<sup>+</sup></span>
-      <span class="stat-label">Dossiers B2B<br/>managés</span>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat-item reveal">
-      <span class="stat-num">×2</span>
-      <span class="stat-label">Gain de vitesse<br/>production IA</span>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat-item reveal">
-      <span class="stat-num">−15%</span>
-      <span class="stat-label">Taux de rebond<br/>UX optimisé</span>
-    </div>
-  </section>
+    <section class="card">
+      <h3>Formation</h3>
+      <p><strong>Master 2 Marketing Digital, Data & E-commerce</strong> – ISTEC Business School (2023-2025)</p>
+      <p><strong>Bachelor Marketing & Communication Digitale</strong> – ISTEC Business School (2021-2023)</p>
+    </section>
 
-  <section class="experience section" id="experience">
-    <div class="section-label">02 — Parcours Professionnel</div>
-
-    <div class="exp-grid">
-      <article class="exp-card reveal">
-        <div class="exp-meta">
-          <span class="exp-date">Sept. 2023 — Août 2025</span>
-          <span class="exp-type">Alternance · 2 ans</span>
-        </div>
-        <div class="exp-body">
-          <h3 class="exp-title">Product &amp; Web Content Specialist</h3>
-          <p class="exp-company">Groupe Neubauer BMW &amp; MINI</p>
-          <ul class="exp-bullets">
-            <li>Production de <strong>50+ contenus photo par trimestre</strong> pour dynamiser le catalogue digital.</li>
-            <li>Suivi opérationnel de <strong>25+ véhicules</strong> au catalogue : coordination logistique et optimisation de la disponibilité en ligne.</li>
-            <li>Mise en place de <strong>workflows IA scalables</strong> (ChatGPT, Canva, Photoshop) — temps de production divisé par deux.</li>
-            <li>Accompagnement digital auprès de clients sur <strong>450+ véhicules livrés</strong> + formation à l'application mobile et dalle numérique.</li>
-          </ul>
-          <div class="exp-tags">
-            <span>Content Production</span><span>IA Générative</span><span>SEO</span><span>Photoshop</span><span>Luxe</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="exp-card reveal">
-        <div class="exp-meta">
-          <span class="exp-date">Sept. 2021 — Juil. 2023</span>
-          <span class="exp-type">Alternance · 2 ans</span>
-        </div>
-        <div class="exp-body">
-          <h3 class="exp-title">Chargé d'Administration Ventes &amp; Coordination B2B</h3>
-          <p class="exp-company">Groupe ALSO — LAFI</p>
-          <ul class="exp-bullets">
-            <li>Pilotage opérationnel de <strong>+5 000 dossiers B2B</strong> complexes : collecte, traçabilité et reporting précis des données.</li>
-            <li>Suivi de la facturation client et coordination des flux inter-équipes avec partenaires constructeurs (HP, Lenovo).</li>
-          </ul>
-          <div class="exp-tags">
-            <span>B2B Sales</span><span>Data Reporting</span><span>Coordination</span><span>ERP</span>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="education section">
-    <div class="section-label">03 — Formation</div>
-
-    <div class="edu-timeline">
-      <div class="edu-item reveal">
-        <div class="edu-dot"></div>
-        <div class="edu-content">
-          <span class="edu-year">2023 — 2025</span>
-          <h3>Master 2 — Marketing Digital, Data &amp; E-commerce</h3>
-          <p class="edu-school">ISTEC Business School (Programme Grande École)</p>
-          <p class="edu-detail">SEO/SEA/SMO · Data Analytics · UX/UI · Stratégie de contenu · Cybersécurité.</p>
-        </div>
+    <section class="card">
+      <h3>Compétences</h3>
+      <div class="skills">
+        <span>SEO</span><span>Analytics</span><span>Figma</span><span>Canva</span>
+        <span>Photoshop</span><span>WordPress</span><span>PrestaShop</span>
+        <span>ChatGPT</span><span>Claude</span><span>Copilot</span>
       </div>
-      <div class="edu-item reveal">
-        <div class="edu-dot"></div>
-        <div class="edu-content">
-          <span class="edu-year">2021 — 2023</span>
-          <h3>Bachelor — Marketing &amp; Communication Digitale</h3>
-          <p class="edu-school">ISTEC Business School</p>
-          <p class="edu-detail">E-marketing · Gestion des réseaux sociaux · Outils de création de sites web.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="projects section">
-    <div class="section-label">04 — Projets &amp; Incubations</div>
-
-    <div class="proj-grid">
-      <article class="proj-card reveal">
-        <div class="proj-number">01</div>
-        <h3>E-commerce Web &amp; Analytics</h3>
-        <p class="proj-context">ISTEC · Fil Rouge 2024–2025</p>
-        <p>Conception d'une application mobile sur Figma, optimisation du parcours client (−15% taux de rebond), suivi des performances via ContentSquare, optimisation SEO-content des landing pages.</p>
-        <div class="proj-stack">
-          <span>PrestaShop</span><span>ContentSquare</span><span>Figma</span><span>SEO</span>
-        </div>
-      </article>
-      <article class="proj-card reveal">
-        <div class="proj-number">02</div>
-        <h3>Direction Artistique &amp; Startup</h3>
-        <p class="proj-context">ISTEC · Expérience Entrepreneuriale 2024–2025</p>
-        <p>Immersion 360° : de la reproduction de scènes culte (tournage avec DJI Osmo) à la création complète d'une startup sur un an — stratégie, finance, RH. Validé par des jurys de professionnels.</p>
-        <div class="proj-stack">
-          <span>Direction artistique</span><span>Vidéo</span><span>DJI Osmo</span><span>Pitch</span>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="skills section" id="skills">
-    <div class="section-label">05 — Écosystème Technique</div>
-
-    <div class="skills-grid">
-      <div class="skill-group reveal">
-        <h4>Analytics &amp; Data Insights</h4>
-        <div class="skill-tags">
-          <span>ContentSquare ✦ Certifié</span>
-          <span>Google Analytics</span>
-          <span>KPI Reporting</span>
-          <span>Analyse comportementale</span>
-          <span>A/B Testing</span>
-        </div>
-      </div>
-      <div class="skill-group reveal">
-        <h4>Création de Contenu &amp; Outils</h4>
-        <div class="skill-tags">
-          <span>Figma</span>
-          <span>Canva Pro</span>
-          <span>Photoshop</span>
-          <span>Illustrator</span>
-          <span>WordPress</span>
-          <span>PrestaShop</span>
-          <span>OBS Studio</span>
-        </div>
-      </div>
-      <div class="skill-group reveal">
-        <h4>IA &amp; Innovation</h4>
-        <div class="skill-tags">
-          <span>ChatGPT Plus</span>
-          <span>Claude 3.5</span>
-          <span>Microsoft Copilot</span>
-          <span>Google Gemini</span>
-          <span>Mistral AI</span>
-          <span>Data Governance</span>
-        </div>
-      </div>
-      <div class="skill-group reveal">
-        <h4>Méthodologies</h4>
-        <div class="skill-tags">
-          <span>Gestion de Projet Agile</span>
-          <span>Culture Data-Driven</span>
-          <span>Storytelling de Marque</span>
-          <span>Optimisation Conversion</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="certifications reveal">
-      <p class="certs-label">Certifications Validées</p>
-      <div class="certs-list">
-        <div class="cert-badge">PrestaShop Experts</div>
-        <div class="cert-badge">ContentSquare Verified</div>
-        <div class="cert-badge">Google Digital Marketing Fundamentals</div>
-        <div class="cert-badge">Social Media Optimization Specialist</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact section" id="contact">
-    <div class="section-label">06 — Contact</div>
-    <div class="contact-inner reveal">
-      <h2>Construisons<br/><em>quelque chose</em><br/>d'inspirant ensemble.</h2>
-      <div class="contact-links">
-        <a href="mailto:mickael.essa@hotmail.com" class="contact-item">
-          <span class="contact-icon">✉</span>
-          <span>mickael.essa@hotmail.com</span>
-        </a>
-        <a href="tel:+33782077463" class="contact-item">
-          <span class="contact-icon">↗</span>
-          <span>+33 7 82 07 74 63</span>
-        </a>
-        <div class="contact-item">
-          <span class="contact-icon">◉</span>
-          <span>Paris, Île-de-France</span>
-        </div>
-      </div>
-      <p class="contact-availability">Disponible immédiatement pour de nouveaux défis</p>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <span>© 2025 Mickaël Essa</span>
-    <span>Conçu avec intention &amp; esthétisme.</span>
-  </footer>
-
-  <script>
-    // ── Suiveur de curseur personnalisé ──
-    const cursor = document.getElementById('cursor');
-    const dot = document.getElementById('cursorDot');
-    let mx = 0, my = 0, cx = 0, cy = 0;
-    
-    document.addEventListener('mousemove', e => { 
-      mx = e.clientX; 
-      my = e.clientY; 
-      dot.style.transform = `translate(${mx}px,${my}px)`; 
-    });
-    
-    (function loop() { 
-      cx += (mx-cx)*.12; 
-      cy += (my-cy)*.12; 
-      cursor.style.transform=`translate(${cx-20}px,${cy-20}px)`; 
-      requestAnimationFrame(loop); 
-    })();
-    
-    document.querySelectorAll('a, button, .exp-card, .proj-card, .skill-tags span').forEach(el => {
-      el.addEventListener('mouseenter',()=>cursor.classList.add('hover'));
-      el.addEventListener('mouseleave',()=>cursor.classList.remove('hover'));
-    });
-
-    // ── Scroll Reveal progressif ──
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-    // ── Smooth Scroll fluide ──
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        e.preventDefault();
-        document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'});
-      });
-    });
-  </script>
+    <section class="card">
+      <h3>Langues</h3>
+      <p>Anglais (B2) · Arabe (C2) · Espagnol (A1)</p>
+    </section>
+  </main>
 </body>
 </html>
